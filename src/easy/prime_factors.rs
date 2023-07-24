@@ -10,5 +10,5 @@ pub fn factors(n: u64) -> Vec<u64> {
             i += 1;
         }
     }
-    return result;
+    result
 }

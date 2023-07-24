@@ -12,5 +12,5 @@ pub fn is_armstrong_number(num: u64) -> bool {
     if sum != num {
         return false;
     }
-    return true;
+    true
 }

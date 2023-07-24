@@ -20,12 +20,12 @@ pub fn verse(n: u32) -> String {
         );
     }
 
-    return format!(
+    format!(
         "{0} bottles of beer on the wall, {0} bottles of beer.\n\
     Take one down and pass it around, {1} bottles of beer on the wall.\n",
         n,
         n - 1
-    );
+    )
 }
 
 pub fn sing(start: u32, end: u32) -> String {
@@ -36,5 +36,5 @@ pub fn sing(start: u32, end: u32) -> String {
             result.push_str("\n");
         }
     }
-    return result;
+    result
 }
