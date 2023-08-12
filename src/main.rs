@@ -1,9 +1,14 @@
-mod easy {
-    pub mod is_armstrong_number;
+mod medium {
+    pub mod clock;
 }
 
-use easy::is_armstrong_number::is_armstrong_number;
+use medium::clock::*;
 
 fn main() {
-    println!("is_armstrong_number(153) = {}", is_armstrong_number(1));
+    println!("{:?}", Clock::new(8, 0).to_string());
+    let clock = Clock::new(23, 59).add_minutes(2);
+    assert_eq!(clock.to_string(), "00:01");
+    println!("{:?}", clock.to_string());
 }
+
+// use high_scores::HighScores;
